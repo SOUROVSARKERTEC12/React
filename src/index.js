@@ -16,13 +16,15 @@ import ReactDOM from 'react-dom';
 // reportWebVitals();
 
 //const element = React.createElement('h1',null,'Hello, World!')
-const index = 0;
-const element = (
-    <h1 className="heading" tabIndex={index}>
-        <span className="text"> Hello World !</span>
-    </h1>
-);
+class Clock {
+    print() {
+        return (
+            <h1 className='heading'>
+                <span className='text'> Hello World !{new Date().toLocaleTimeString()}</span>
+            </h1>
+        );
+    }
+}
 
-ReactDOM.render(element,document.getElementById('root'))
-
-console.log(element)
+const ClockCompoent = new Clock();
+ReactDOM.render(ClockCompoent.print(),document.getElementById('root'))
