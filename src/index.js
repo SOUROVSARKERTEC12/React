@@ -15,6 +15,7 @@ import React from 'react';
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-const element = React.createElement('h1',null,'Hello, World!')
+//const element = React.createElement('h1',null,'Hello, World!')
+const element = <h1>Hello World!</h1>
 
 console.log(element)
