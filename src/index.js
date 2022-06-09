@@ -1,5 +1,5 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 // import App from './App'
 // import reportWebVitals from './reportWebVitals';
 //
@@ -16,6 +16,13 @@ import React from 'react';
 // reportWebVitals();
 
 //const element = React.createElement('h1',null,'Hello, World!')
-const element = <h1>Hello World!</h1>
+const index = 0;
+const element = (
+    <h1 className="heading" tabIndex={index}>
+        <span className="text"> Hello World !</span>
+    </h1>
+);
+
+ReactDOM.render(element,document.getElementById('root'))
 
 console.log(element)
