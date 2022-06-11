@@ -15,7 +15,9 @@ class Clock extends React.Component {
         this.setState({ date: new Date() });
     }
 
-    handleClick(){
+    handleClick(event){
+        //preventing the default action of any button ; return true or false
+        event.defaultPrevented();
         console.log('The button was clicked')
     }
 
