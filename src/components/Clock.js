@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Clock extends React.Component {
-    state = { date: new Date() };
+    state = { date: new Date(), locale: 'bn-BD' };
 
     componentDidMount() {
         this.clockTimer = setInterval(() => this.tick(), 1000);
@@ -15,18 +15,18 @@ class Clock extends React.Component {
         this.setState({ date: new Date() });
     }
 
-    handleClick(event){
-        //preventing the default action of any button ; return true or false
-        event.defaultPrevented();
-        console.log('The button was clicked')
+    handleClick = ()=>{
+        this.setState({
+            locale : 'en-US'
+        })
     }
 
     render() {
-        const { date } = this.state;
+        const { date,locale } = this.state;
         return (
             <div>
                 <h1 className='heading'>
-                <span className='text'> Chill Bro For You baby {date.toLocaleTimeString('bn-BD')}</span>
+                <span className='text'> Chill Bro For You baby {date.toLocaleTimeString(locale)}</span>
                 </h1>
                 <button type ="button" onClick={this.handleClick}> Click Here</button>
             </div>
