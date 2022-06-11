@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 class Clock extends React.Component {
     state = { date: new Date(), locale: 'bn-BD' };
@@ -29,7 +30,7 @@ class Clock extends React.Component {
                 <h1 className='heading'>
                     <span className='text'> Chill Bro For You baby {date.toLocaleTimeString(locale)}</span>
                 </h1>
-                <button type='button' onClick={()=>this.handleClick('en-US')}> Click Here</button>
+                <Button change={this.handleClick.bind('en-US')}> Click Here</Button>
             </div>
         );
     }
