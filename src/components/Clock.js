@@ -1,7 +1,11 @@
 import React from 'react';
 
 class Clock extends React.Component {
-    state = { date: new Date(), locale: 'bn-BD' };
+    constructor(props) {
+        super(props);
+        this.state = { date: new Date(), locale: 'bn-BD' };
+        this.handleClick = this.handleClick.bind(this);
+    }
 
     componentDidMount() {
         this.clockTimer = setInterval(() => this.tick(), 1000);
@@ -15,7 +19,7 @@ class Clock extends React.Component {
         this.setState({ date: new Date() });
     }
 
-    handleClick = ()=>{
+    handleClick(){
         this.setState({
             locale : 'en-US'
         })
