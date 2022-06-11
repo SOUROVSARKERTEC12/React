@@ -29,7 +29,7 @@ class Clock extends React.Component {
                 <h1 className='heading'>
                     <span className='text'> Chill Bro For You baby {date.toLocaleTimeString(locale)}</span>
                 </h1>
-                <button type='button' onClick={this.handleClick.bind(this, 'en-US')}> Click Here</button>
+                <button type='button' onClick={()=>this.handleClick('en-US')}> Click Here</button>
             </div>
         );
     }
