@@ -41,8 +41,8 @@ class Clock extends React.Component {
                 <h1 className='heading'>
                     <span className='text'> Chill Bro For You baby {date.toLocaleTimeString(locale)}</span>
                 </h1>
-                {locale === 'bn-BD' ? <Button change={this.handleClick} locale='en-US' show = {false}/>:
-                    <Button change={this.handleClick} locale='bn-BD' show/>}
+                {locale === 'bn-BD' ? <Button change={this.handleClick} locale='en-US' enable = {false}/>:
+                    <Button change={this.handleClick} locale='bn-BD' show enable/>}
             </div>
         );
     }
