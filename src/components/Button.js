@@ -11,7 +11,6 @@ class Button extends React.Component{
     }
 
     render() {
-        console.log('Button render')
         const {change,locale} = this.props
         return(
             <button type="button" onClick={()=> change(locale)}>Click Here</button>
