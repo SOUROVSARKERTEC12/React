@@ -35,11 +35,17 @@ export default class Form extends React.Component {
         }
     };
 
+    submitHandler=(e)=>{
+        const { title, text, library,isChecked } = this.state;
+        e.preventDefault();
+        console.log(title, text, library,isChecked)
+    }
+
     render() {
         const { title, text, library,isChecked } = this.state;
         return (
             <div>
-                <form>
+                <form onSubmit={this.submitHandler}>
                     <input type='text' placeholder='Enter Title' value={title} onChange={this.handleChange} />
                     <br />
                     <br />
@@ -53,6 +59,9 @@ export default class Form extends React.Component {
                     <br />
                     <br />
                     <input type="checkbox" checked={isChecked} onChange={this.handleChange}/>
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
         );
