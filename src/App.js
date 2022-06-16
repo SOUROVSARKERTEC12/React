@@ -9,9 +9,10 @@ import HoverCounter from './components/HoverCounter';
 //import Form from './components/Form';
 
 function App() {
-    return <div className="app"><ClickCounter />
-    <HoverCounter/>
-    </div>
+    return <div className='app'>
+        <ClickCounter />
+        <HoverCounter />
+    </div>;
     // return (
     //     <Emoji>
     //         {({ addEmoji }) => (
