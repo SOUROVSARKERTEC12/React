@@ -1,5 +1,6 @@
 import React from 'react';
 import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 // import Text from './components/composition/Text';
 // import Emoji from './components/composition/Emoji';
 // import Bracket from './components/composition/Bracket';
@@ -8,7 +9,9 @@ import ClickCounter from './components/ClickCounter';
 //import Form from './components/Form';
 
 function App() {
-    return <div className="app"><ClickCounter /></div>
+    return <div className="app"><ClickCounter />
+    <HoverCounter/>
+    </div>
     // return (
     //     <Emoji>
     //         {({ addEmoji }) => (
