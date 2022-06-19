@@ -2,6 +2,7 @@ import React from 'react';
 import ClickCounter from './components/HOC/ClickCounter';
 import Counter from './components/HOC/Counter';
 import Section from './components/HOC/Section';
+import ThemeContext from './components/contexts/themeContext';
 
 
 export default class App extends React.Component {
@@ -17,7 +18,7 @@ export default class App extends React.Component {
                         {incrementCount} />
                 )}
             </Counter>
-            <Section theme = {theme}/>
+            <ThemeContext.Provider value={{theme: theme}}><Section theme = {theme}/></ThemeContext.Provider>
         </div>;
     }
 }
