@@ -32,7 +32,9 @@ export default class App extends React.Component {
                         {incrementCount} />
                 )}
             </Counter>
-            <ThemeContext.Provider value={{theme, switchTheme : this.switchTheme }}><Section theme={theme} /></ThemeContext.Provider>
+            <ThemeContext.Provider value={{theme, switchTheme : this.switchTheme }}>
+                <Section theme={theme} />
+            </ThemeContext.Provider>
         </div>;
     }
 }
