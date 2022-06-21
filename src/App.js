@@ -8,7 +8,7 @@ import ThemeContext from './components/contexts/themeContext';
 export default class App extends React.Component {
     state = {
         theme: 'dark',
-        switchTheme : () => {
+        switchTheme: () => {
             this.setState(({ theme }) => {
                 if (theme === 'dark') {
                     return {
@@ -32,7 +32,7 @@ export default class App extends React.Component {
                         {incrementCount} />
                 )}
             </Counter>
-            <ThemeContext.Provider value={this.state }>
+            <ThemeContext.Provider value={this.state}>
                 <Section />
             </ThemeContext.Provider>
         </div>;
