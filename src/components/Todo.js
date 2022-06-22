@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function Todos (){
     const [todo,setTodo] = useState('');
-    const [warning, setWarning] = useState('');
+    const [warning, setWarning] = useState(null);
 
     const handleInput = (e) => {
         const inputValue = e.target.value;
