@@ -1,5 +1,5 @@
 import React from 'react';
-import MyComponentClass from './components/MyComponentClass';
+//import MyComponentClass from './components/MyComponentClass';
 import MyComponent from './components/MyComponent';
 
 
