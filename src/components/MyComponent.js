@@ -5,6 +5,7 @@ export default function MyComponent() {
     const [date, setDate] = useState(new Date());
 
     const tick = () => {
+        console.log('clock ticking!');
         setDate(new Date());
     };
 
@@ -13,9 +14,15 @@ export default function MyComponent() {
     }, [count]);
 
     useEffect(() => {
-        console.log('starting timer')
-        setInterval(tick, 1000);
-    },[]);
+        console.log('starting timer');
+        const interval =setInterval(tick, 1000);
+
+        // do the cleanup - stop the timer
+        return () =>{
+            console.log('component unmounted')
+            clearInterval(interval);
+        }
+    }, []);
 
     const addClick = () => {
         console.log('updating document title');
