@@ -1,4 +1,4 @@
-import React,{ useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import Button from './components/Button';
 import ShowCount from './components/ShowCount';
 import Title from './components/Title';
@@ -17,12 +17,12 @@ function App() {
 
 
     return (
-        <div className="app">
+        <div className='app'>
             <Title />
-            <ShowCount count={count1} title="Counter 1" />
+            <ShowCount count={count1} title='Counter 1' />
             <Button handleClick={incrementByOne}>Increment by one</Button>
             <hr />
-            <ShowCount count={count2} title="Counter 2" />
+            <ShowCount count={count2} title='Counter 2' />
             <Button handleClick={incrementByFive}>Increment by five</Button>
         </div>
     );
