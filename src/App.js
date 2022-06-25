@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import From from './components/From';
+import React from 'react';
+
+import Time from './components/Time';
 
 export default function App(){
     return(
         <div className="app">
             <div>
-                <From/>
+             <Time/>
             </div>
         </div>
     )

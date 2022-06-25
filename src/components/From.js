@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Input from './Input';
 
 export default function From() {
     const inputRef = useRef(null);
