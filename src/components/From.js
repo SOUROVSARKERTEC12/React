@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
-export default function From(){
+export default function From() {
+    const inputRef = useRef(null);
+
+    useEffect(() => {
+        //component did load
+        inputRef.current.focus();
+    }, []);
     return (
         <div>
             <p>
-                <input type='text' placeholder="enter something..." />
+                <input ref={inputRef} type='text' placeholder='enter something...' />
             </p>
         </div>
     );

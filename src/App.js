@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import From from './components/From';
 
 export default function App(){
