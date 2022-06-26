@@ -22,7 +22,7 @@ export default function GetPost() {
     return (
         <div>
             {loading ? 'Loading...' :post.title}
-            {error ? error : null}
+            {error || null}
         </div>
     );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import GetPost from './components/Hooks/GetPost';
+import GetPost2 from './components/Hooks/GetPost2';
 
 export default function App(){
 
     return(
         <div className="app">
-            <GetPost />
+            <GetPost2 />
         </div>
     )
 }
