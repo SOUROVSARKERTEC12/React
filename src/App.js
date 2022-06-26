@@ -1,12 +1,11 @@
 import React from 'react';
-
-import Time from './components/Time';
+import Counter from './components/Hooks/Counter';
 
 export default function App(){
     return(
         <div className="app">
             <div>
-             <Time/>
+             <Counter />
             </div>
         </div>
     )
