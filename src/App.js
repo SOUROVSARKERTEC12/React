@@ -1,11 +1,11 @@
 import React from 'react';
-import ComplexCounter from './components/Hooks/ComplexCounter';
+import CounterThree from './components/Hooks/CounterThree';
 
 export default function App(){
     return(
         <div className="app">
             <div>
-             <ComplexCounter />
+             <CounterThree />
             </div>
         </div>
     )
