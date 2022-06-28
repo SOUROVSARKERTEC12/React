@@ -1,11 +1,11 @@
 import React from 'react';
-import LayoutComponentOne from './components/LayoutComponent';
+import LayoutComponentTwo from './components/LayoutComponentTwo';
 
 export default function App(){
 
     return(
         <div className="app">
-           <LayoutComponentOne/>
+           <LayoutComponentTwo/>
         </div>
     )
 }
