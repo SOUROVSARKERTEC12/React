@@ -1,11 +1,11 @@
 import React from 'react';
-import GetPost2 from './components/Hooks/GetPost2';
+import LayoutComponentOne from './components/LayoutComponent';
 
 export default function App(){
 
     return(
         <div className="app">
-            <GetPost2 />
+           <LayoutComponentOne/>
         </div>
     )
 }
