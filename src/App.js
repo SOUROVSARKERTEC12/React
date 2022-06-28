@@ -1,11 +1,14 @@
 import React from 'react';
-import LayoutComponentTwo from './components/LayoutComponentTwo';
+import Logo from './components/Logo';
+import '../assets/css/global.css';
+
 
 export default function App(){
 
     return(
         <div className="app">
-           <LayoutComponentTwo/>
+           <h1>Learn With Sumit Youtube Channel</h1>
+            <Logo />
         </div>
     )
 }
