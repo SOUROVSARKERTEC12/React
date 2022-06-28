@@ -2,7 +2,7 @@ import React from 'react';
 import useWindowWidth from './Hooks/useWindowWidth';
 
 export default function LayoutComponentTwo() {
-    const onSmallScreen = useWindowWidth();
+    const onSmallScreen = useWindowWidth(768);
 
     return (
         <div className={onSmallScreen ? 'small' : 'large'}>
